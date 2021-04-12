@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 88vw;
+    margin: 0 auto;
+}
+body{
+    font-family: Serif, sans-serif;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.product-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.container{
+    width: 88vw;
+    margin: 0 auto;
+}
+.lg-title,
+.sm-title{
+    padding: 0.6rem 0;
+    text-transform: capitalize;
+}
+.lg-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1.3rem 0;
+    opacity: 0.9;
+}
+.sm-title{
+    font-weight: 300;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.products{
+   padding: 3.2rem 0;
+}
+.product{
+    margin: 2rem;
+    position: relative;
+}
+.product-content{
+    background: white;
+    padding: 3rem 0.5rem 2rem 0.5rem;
+    cursor: pointer;
+}
+.product-img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.product-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.4rem;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+.product-btns a{
+    text-decoration: none;
+    color: black;
+}
+.btn-cart{
+    background: transparent;
+    border: 1px solid black;
+    padding: 0.8rem 0;
+    width: 125px;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+.btn-cart:hover{
+    background: #ffe4e8;
+}
+.product-info{
+    background: #ffd9e3;
+    padding: 2rem;
+    display: block;
+}
+.product-info-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-name{
+    color: black;
+    display: block;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.product-price{
+    color: #2ecc71;
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+    display: inline-block;
+    font-size: 2rem;
+}
+.product-img img{
+    transition: transform 0.6s ease;
+}
+.product:hover .product-img img{
+    transform: scale(1.1);
+}
+.product:hover .product-btns{
+    opacity: 1;
+}

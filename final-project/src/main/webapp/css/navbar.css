@@ -1,0 +1,102 @@
+nav {
+    background-color: #e23da7;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav .wrapper {
+    position: relative;
+    margin: auto;
+    display: flex;
+    background: white;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.wrapper .nav-links {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    visibility: visible;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    visibility: visible;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-links li a:hover {
+    color: #e23da7;;
+}
+
+.nav-links li:hover .mega-box {
+    opacity: 1;
+    top:20px;
+    visibility: visible;
+    transition:  0.3s;
+}
+
+.drop-menu li a {
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+}
+
+.mega-box {
+    position: absolute;
+    width: 100%;
+    /*top: 0;*/
+    left: 0;
+    background: #f1f1f1;
+    opacity: 0;
+    visibility: hidden;
+    top:-9999px;
+    transition: all 0.3s ease;
+}
+.mega-box .content{
+    background: #f1f1f1;
+    padding: 20px 25px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.content .row{
+    width: calc(25% - 30px);
+    line-height: 45px;
+}
+.content .row header{
+    color:  #ff2c66;
+    font-size: 20px;
+    font-weight: 600;
+}
+.content .row .mega-links{
+    margin-left: -40px;
+    border-left: 1px solid;
+}
+.row .mega-links li{
+    padding: 0 20px;
+    color: black;
+}
+.row .mega-links li a{
+    padding: 0 20px;
+    display: block;
+    font-size: 17px;
+    color: black;
+}
+.row .mega-links li a:hover{
+    color:  #ff2c66;
+}

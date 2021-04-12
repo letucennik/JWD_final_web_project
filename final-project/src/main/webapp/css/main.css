@@ -1,0 +1,12 @@
+.menu {
+    height: 5%;
+    width: 100%;
+    display: inline;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    z-index: -10;
+}
+
